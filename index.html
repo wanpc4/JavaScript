@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <title>Mini calculator</title>
+    </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <body>
+        
+        <div class="calculator">
+            <div class="outer-layer">
+            <div class="calculator-frame">
+                <h1>Mini calculator</h1>
+                <input type="text" id="input_value" name="input_value" placeholder="0.00">
+                <br>
+                <!-- Numbers 1 to 3 -->
+                <div class="numbers_1_3">
+                    <button id="number_1" onclick="number_1()">1</button>
+                </div>
+                <div class="numbers_1_3">
+                    <button id="number_2" onclick="number_2()">2</button>
+                </div>
+                <div class="numbers_1_3">
+                    <button id="number_3" onclick="number_3()">3</button>
+                </div>
+                <div class="numbers_1_3">
+                    <button id="delete" onclick="deleteOne()"><i class="material-icons">&#xe14a;</i></button>
+                </div>
+                <div class="numbers_1_3">
+                    <button id="reset" onclick="resetAll()">AC</button>
+                </div>
+                <br>
+                <!-- Numbers 4 to 6 -->
+                <div class="numbers_4_6">
+                    <button id="number_4" onclick="number_4()">4</button>
+                </div>
+                <div class="numbers_4_6">
+                    <button id="number_5" onclick="number_5()">5</button>
+                </div>
+                <div class="numbers_4_6">
+                    <button id="number_6" onclick="number_6()">6</button>
+                </div>
+                <div class="numbers_4_6">
+                    <button id="addition" onclick="addNumber()">+</button>
+                </div>
+                <div class="numbers_4_6">
+                    <button id="subtraction" onclick="subtNumber()">-</button>
+                </div>
+                <br>
+                <!-- Numbers 7 to 8 -->
+                <div class="numbers_7_9">
+                    <button id="number_7" onclick="number_7()">7</button>
+                </div>
+                <div class="numbers_7_9">
+                    <button id="number_8" onclick="number_8()">8</button>
+                </div>
+                <div class="numbers_7_9">
+                    <button id="number_9" onclick="number_9()">9</button>
+                </div>
+                <div class="numbers_7_9">
+                    <button id="multiplication" onclick="multNumber()">×</button>
+                </div>
+                <div class="numbers_7_9">
+                    <button id="division" onclick="divNumber()">÷</button>
+                </div>
+                <br>
+                <!-- Additional items -->
+                <div class="add_items">
+                    <button id="number_0" onclick="number_0()">0</button>
+                </div>
+                <div class="add_items">
+                    <button id="decimal" onclick="decimal()">.</button>
+                </div>
+                <div class="add_items">
+                    <button id="equal_to" type="submit" onclick="equal_to()">=</button>
+                </div>
+                <div class="add_items">
+                    <button id="open_bracket" onclick="openBracket()">(</button>
+                </div>
+                <div class="add_items">
+                    <button id="close_bracket" onclick="closeBracket()">)</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <i>Developed by: Idriss</i>
+    </body>
+    <script src="script.js"></script>
+</html>
